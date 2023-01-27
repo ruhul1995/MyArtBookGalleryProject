@@ -6,6 +6,7 @@ import com.example.myartbookgalleryproject.model.ImageResponse
 import com.example.myartbookgalleryproject.roomdb.Art
 import com.example.myartbookgalleryproject.roomdb.ArtDao
 import com.example.myartbookgalleryproject.util.Resource
+import dagger.hilt.InstallIn
 import javax.inject.Inject
 
 //We are overriding the methods from ArtRepositoryInterface

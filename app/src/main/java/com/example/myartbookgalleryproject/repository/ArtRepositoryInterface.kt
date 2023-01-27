@@ -4,6 +4,10 @@ import androidx.lifecycle.LiveData
 import com.example.myartbookgalleryproject.model.ImageResponse
 import com.example.myartbookgalleryproject.roomdb.Art
 import com.example.myartbookgalleryproject.util.Resource
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+
 
 interface ArtRepositoryInterface {
 

@@ -2,6 +2,7 @@ package com.example.myartbookgalleryproject.roomdb
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import dagger.Provides
 
 @Dao
 interface ArtDao {
