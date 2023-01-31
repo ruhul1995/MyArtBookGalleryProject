@@ -62,7 +62,7 @@ class ImageRecyclerAdapter @Inject constructor(
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return images.size
     }
 
 }
