@@ -29,6 +29,8 @@ class ArtDetailsFragment  @Inject constructor(
         val binding = FragmentArtDetailsBinding.bind(view)
         fragmentBinding = binding
 
+        subscribeToObservers()
+
         binding.artImgView.setOnClickListener{
             findNavController().navigate(ArtDetailsFragmentDirections.actionArtDetailsFragmentToImageApiFragment())
         }

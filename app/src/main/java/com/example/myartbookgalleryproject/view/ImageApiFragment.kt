@@ -88,4 +88,9 @@ class ImageApiFragment @Inject constructor(
             }
         })
     }
+
+    override fun onDestroyView() {
+        fragmentBinding = null
+        super.onDestroyView()
+    }
 }

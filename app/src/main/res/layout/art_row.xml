@@ -30,7 +30,7 @@
             android:id="@+id/artRowArtistNameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name of Art"
+            android:text="Artist Name"
             android:textSize="20sp"
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="5dp"/>
