@@ -16,7 +16,7 @@ class ArtViewModelTest {
 
     // This rules means run all the background threads or task in main thread only.
     // Since we are not running in Android Test, then we don't need rule
-    //We don't want any threading basically
+    // We don't want any threading basically
 
     @get:Rule
     var instantTaskExecutorRule = InstantTaskExecutorRule()
