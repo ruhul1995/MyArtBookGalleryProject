@@ -47,8 +47,8 @@ class ArtDetailsFragment  @Inject constructor(
         //if it is success, then it is added in room database
         binding.saveButton.setOnClickListener {
             viewModel.makeArt(binding.nameEditText.text.toString(),
-                binding.artDetailYearTxtV.text.toString(),
-                binding.artDetailYearTxtV.text.toString()) // checks if everthing is okay like data is okay
+                binding.artDetailArtistNametxtV.text.toString(),
+                binding.artDetailYearTxtV.text.toString()) // checks if everything is okay like data is okay
         }
     }
 
@@ -68,7 +68,7 @@ class ArtDetailsFragment  @Inject constructor(
             {
                 Status.SUCCESS -> {
                     Toast.makeText(requireContext(), "Success",Toast.LENGTH_LONG).show()
-                    findNavController().popBackStack()
+                    findNavController().navigateUp()
                     viewModel.resetInsertArtMsg() //
                 }
                 Status.ERROR -> {

@@ -68,6 +68,7 @@ class ArtViewModel @Inject constructor(
         if ( name.isEmpty() || artistName.isEmpty() || year.isEmpty())
         {
             insertArtMsg.postValue(Resource.error("Enter name, artist, year ", null))
+            return
         }
 
         val yearInt = try {
@@ -76,9 +77,10 @@ class ArtViewModel @Inject constructor(
         catch (e: Exception)
         {
             insertArtMsg.postValue(Resource.error("Year should be number", null))
+            return
         }
 
-        val art = Art(name, artistName, yearInt as Int, selectedImage.value ?: "")
+        val art = Art(name, artistName, yearInt, selectedImage.value ?: "")
         insertArt(art)
         setSelectedImage("")
         insertArtMsg.postValue(Resource.success(art))
